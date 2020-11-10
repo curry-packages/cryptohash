@@ -9,8 +9,8 @@ module Crypto.Hash
   ( getHash, getHashWith, randomString )
  where
 
-import IO            ( hClose, hGetLine, hPutStrLn )
-import IOExts        ( execCmd )
+import System.IO     ( hClose, hGetLine, hPutStrLn )
+import System.IOExts ( execCmd )
 
 import System.Random ( getRandomSeed, nextInt )
 
